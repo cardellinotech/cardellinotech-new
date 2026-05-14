@@ -10,6 +10,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-sans);
+  --font-display: var(--font-bricolage);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -49,6 +50,8 @@
 }
 
 body {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
   font-family: var(--font-sans, Arial, Helvetica, sans-serif);
 }
 
@@ -85,6 +88,40 @@ body {
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+}
+
+/* Design Tokens — cardellino.tech */
+:root {
+  /* Colors */
+  --color-background: #0F172A;
+  --color-surface: #1E293B;
+  --color-surface-raised: #293548;
+  --color-border: #334155;
+  --color-border-strong: #475569;
+  --color-on-background: #F1F5F9;
+  --color-on-surface-muted: #94A3B8;
+  --color-accent: #F59E0B;
+  --color-on-accent: #0F172A;
+  --color-error: #EF4444;
+  --color-success: #10B981;
+  --color-warning: #F97316;
+
+  /* Rounded scale */
+  --rounded-none: 0px;
+  --rounded-sm: 4px;
+  --rounded-md: 6px;
+  --rounded-lg: 8px;
+  --rounded-full: 9999px;
+
+  /* Spacing scale */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+  --spacing-4xl: 96px;
 }
 
 .dark {
