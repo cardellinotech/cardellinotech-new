@@ -33,7 +33,7 @@
 
 ---
 
-- [ ] **TASK-001** — Initialize Next.js 15 project with App Router, TypeScript, and Tailwind CSS
+- [x] **TASK-001** — Initialize Next.js 15 project with App Router, TypeScript, and Tailwind CSS
   Files: `package.json`, `next.config.ts`, `tsconfig.json`, `tailwind.config.ts`, `app/layout.tsx`, `app/page.tsx`, `app/globals.css`
   Notes: Run `npx create-next-app@latest . --typescript --tailwind --app --no-src-dir --import-alias "@/*"`. Accept all defaults. Verify: `npm run dev` starts without errors and serves a default page at localhost:3000.
 
