@@ -57,7 +57,7 @@
   Files: `lib/data/services.ts`, `lib/data/caseStudies.ts`, `lib/data/engagementModels.ts`
   Notes: Create TypeScript data files per the data structures in `docs/prd.md` § 3. Data Model. For `services.ts`: populate all 4 service entries (CI/CD & Automation, Kubernetes & Container, Cloud Infrastructure, Platform Engineering) with full descriptions, tools arrays, and outcome statements. For `caseStudies.ts`: write at minimum 2 anonymized case studies — be specific about the technical problem and use measurable outcomes. For `engagementModels.ts`: populate Project, Retainer, Advisory entries. Verify: TypeScript compiles without errors (`npm run build`).
 
-- [ ] **TASK-007** — Configure Vercel project and custom domain
+- [x] **TASK-007** — Configure Vercel project and custom domain
   Files: `vercel.json` (optional), Vercel dashboard settings
   Notes: Run `npx vercel` to link the project to Vercel. In Vercel dashboard → Project → Settings → Domains: add `cardellino.tech`. Update DNS records at domain registrar: A record `@` → `76.76.21.21`, CNAME `www` → `cname.vercel-dns.com`. Also set environment variables in Vercel dashboard (RESEND_API_KEY, CONTACT_EMAIL, RESEND_FROM_EMAIL) for production. Also set up Resend domain verification: in Resend dashboard → Domains → Add `cardellino.tech`. Add the provided DNS records (MX and TXT) at the registrar. Domain verification takes 24–48 hours — start this early. Verify: `vercel --prod` deploys successfully.
 
