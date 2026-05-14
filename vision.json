@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "createdAt": "2026-05-14T00:00:00Z",
+    "updatedAt": "2026-05-14T00:00:00Z",
+    "version": "1.1",
+    "plaidVersion": "1.0"
+  },
+  "creator": {
+    "name": "Dominic Cardellino",
+    "expertise": "Senior DevOps & SRE Engineer with 8+ years of hands-on experience across CI/CD, Kubernetes, cloud infrastructure (AWS/GCP/Azure), and Platform Engineering",
+    "background": "After 8+ years building and operating production infrastructure at various companies, I've seen the same pattern repeat: startups move fast and break things, but at some point the infrastructure debt catches up and things just break. I've been the person on the other end of those 2am pages, and I know what it takes to build systems that scale reliably without slowing down the engineering team. I decided to go freelance to work directly with the companies that need this the most — high-growth startups that are serious about their infrastructure but can't yet justify a full in-house platform team."
+  },
+  "purpose": {
+    "whoYouHelp": "Tech startups and scale-ups (Series A–C) that are growing fast and need senior DevOps/SRE expertise — but don't yet have a full in-house platform team and can't afford the overhead of a traditional agency",
+    "problemYouSolve": "Fast-growing startups hit infrastructure walls at the worst times: a spike takes down the app, deployments are slow and risky, the dev team wastes hours on ops work, and nobody owns the reliability picture end-to-end. Hiring a senior DevOps engineer takes months and costs a lot. Agencies charge enterprise prices and hand the work to juniors.",
+    "desiredTransformation": "Startups go from firefighting mode — slow deploys, fragile infra, dev teams blocked — to a stable, automated platform where engineers ship confidently and ops is invisible. The CTO can focus on product, not incidents.",
+    "whyYou": "I don't subcontract. I don't hand work to juniors. When you work with me, you get a senior engineer who has designed and owned production infrastructure across multiple stages of startup growth — from scrappy early-stage setups to high-availability platforms handling millions of requests. I bring both the tactical execution and the strategic thinking of a Staff Engineer, without the cost or delay of a full-time hire."
+  },
+  "product": {
+    "name": "cardellino.tech",
+    "oneLiner": "Senior DevOps & SRE freelancer helping tech startups build reliable, scalable infrastructure — end-to-end, no handoffs.",
+    "howItWorks": "A startup CTO or VP Engineering finds the site (via LinkedIn, referral, or search). The hero immediately communicates the value prop. They scroll through services, read how engagements work, and see concrete case studies that mirror their situation. By the time they hit the contact form, they already trust Dominic's expertise. They submit a short brief and receive a reply within 24 hours to schedule a discovery call.",
+    "keyCapabilities": [
+      "CI/CD pipeline design and automation (GitHub Actions, GitLab CI, ArgoCD)",
+      "Kubernetes cluster setup, hardening, and operations",
+      "Cloud infrastructure on AWS, GCP, and Azure — including migrations and IaC (Terraform/Pulumi)",
+      "Platform Engineering and Developer Experience — internal platforms, golden paths, self-service infra",
+      "Engagement models: project-based, retainer, and advisory"
+    ],
+    "platform": "web",
+    "marketDifferentiation": "Unlike agencies that charge a premium and delegate to junior engineers, cardellino.tech offers direct access to a senior engineer who takes end-to-end ownership — from architecture decisions to production. Unlike generalist freelancers, Dominic specializes deeply in the DevOps/SRE space with proven experience across all major cloud providers and the full modern infra stack.",
+    "magicMoment": "A startup CTO reads the case studies and recognizes their exact problem described in one of them — then realizes there's a clear, concrete solution. They scroll up to the contact form and fill it out immediately."
+  },
+  "audience": {
+    "primaryUser": "Alex, 35, CTO at a 40-person Series B startup. His team ships fast but the infrastructure is held together with duct tape. Deployments are manual and scary. The on-call rotation is burning out the dev team. He knows they need a real platform, but hiring a DevOps lead takes 3–4 months and $180k+. He's looking for someone senior enough to own the problem, not just execute tickets.",
+    "secondaryUsers": [
+      "VP Engineering or Engineering Manager at a scale-up who needs a specialist to complement their existing team for a specific migration or reliability project",
+      "Founder/CEO at an early-stage startup who is technical enough to know they need help but needs someone trustworthy to take over the infra completely",
+      "Head of Product or COO looking to reduce deployment risk before a major launch"
+    ],
+    "currentAlternatives": "Traditional DevOps agencies (expensive, junior handoffs, slow), posting on Upwork/Toptal (quality roulette, no strategic thinking), trying to hire a full-time DevOps engineer (3-4 months, expensive, overkill for current stage), or just having a backend developer own infra on the side (risky, they hate it)",
+    "frustrations": "Agencies are unaccountable — the person you spoke with in the sales call is never the person doing the work. Freelancer platforms make it impossible to evaluate seniority before you're already in a bad engagement. Full-time hires take too long and cost too much for a problem that could be solved in 6–8 weeks. And the 'DevOps-curious backend dev' approach always ends in a production incident."
+  },
+  "business": {
+    "revenueModel": "one-time",
+    "initialGoal": "3 qualified inbound leads within 90 days of launch, at least 1 signed engagement, and a fully polished page that ranks for relevant search terms in the DACH/EU startup market",
+    "sixMonthVision": "Fully booked with 2–3 ongoing engagements, a strong referral pipeline, and the page serving as the primary inbound channel. Recognized as the go-to senior DevOps freelancer for Series A/B startups in Europe.",
+    "constraints": "Time available to build the page: evenings and weekends. Goal: ship a polished, professional v1 within 1–2 weeks. Existing content (case studies, logos) to be collected in parallel. No paid ads budget at launch — organic and referral only.",
+    "goToMarket": "LinkedIn is the primary channel — share insights, comment on relevant posts, update profile to point to cardellino.tech. Personal network outreach to former clients and colleagues for referrals. SEO targeting: 'DevOps freelancer Europe', 'SRE consultant startup'. Optional: write 2–3 technical blog posts to establish thought leadership."
+  },
+  "feeling": {
+    "brandPersonality": "The senior engineer you wish you had in-house. Direct, technically deep, no bullshit. Warm enough to be approachable, authoritative enough to be trusted with your production systems. Think: the kind of person who explains a complex Kubernetes architecture clearly in a 10-minute call and makes you feel confident, not overwhelmed.",
+    "toneOfVoice": "Clear, confident, and direct. No corporate jargon, no over-promising. Technical enough to show expertise, accessible enough for a non-technical CTO to understand the value. Example headline: 'Your infra. Reliable. Fast. Owned end-to-end.' Example CTA: 'Tell me what you're building — I'll tell you how I can help.'"
+  },
+  "techStack": {
+    "appType": "web",
+    "frontend": {
+      "choice": "Next.js 15 (App Router)",
+      "rationale": "Static generation for fast load times and SEO, App Router for modern patterns, excellent Tailwind CSS integration, deploys seamlessly to Vercel"
+    },
+    "backend": {
+      "choice": "Next.js API Routes",
+      "rationale": "The site is primarily static — the only dynamic requirement is the contact form. A single Next.js API Route using Resend handles email delivery without a separate backend service."
+    },
+    "database": {
+      "choice": "None",
+      "rationale": "Pure landing page — no user accounts, no persistent data. The contact form submits via API route directly to email."
+    },
+    "auth": {
+      "choice": "None",
+      "rationale": "No authenticated features. Visitors browse and submit a contact form — no login required."
+    },
+    "payments": {
+      "choice": "None",
+      "rationale": "Landing page only — no direct payment processing. Revenue comes from off-site engagements initiated via the contact form."
+    }
+  },
+  "tooling": {
+    "codingAgent": "claude-code"
+  }
+}
