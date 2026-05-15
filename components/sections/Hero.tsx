@@ -20,15 +20,12 @@ export default function Hero() {
           End-to-end infrastructure ownership — CI/CD, Kubernetes, platform engineering. No agencies. No junior handoffs.
         </p>
 
-        {/* CTA Button */}
-        <div className="pt-2">
-          <a
-            href="#contact"
-            className="inline-block bg-[var(--color-accent)] text-[var(--color-on-accent)] hover:bg-[#D97706] rounded-[var(--rounded-lg)] px-8 py-3.5 text-base font-semibold transition-colors"
-          >
-            Get in Touch
-          </a>
-        </div>
+        <a
+          href="#contact"
+          className="inline-block bg-[var(--color-accent)] text-[var(--color-on-accent)] hover:bg-[#D97706] rounded-[var(--rounded-lg)] px-8 py-3.5 text-base font-semibold transition-colors"
+        >
+          Get in Touch
+        </a>
       </div>
     </section>
   );
