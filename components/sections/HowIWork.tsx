@@ -22,7 +22,7 @@ export default function HowIWork() {
                 {model.description}
               </p>
 
-              <p className="font-sans text-[16px] text-[var(--color-on-surface-muted)]">
+              <p className="font-sans text-[16px] leading-[1.6] text-[var(--color-on-surface-muted)]">
                 <span className="text-[var(--color-accent)] font-semibold">
                   Best for:{" "}
                 </span>
