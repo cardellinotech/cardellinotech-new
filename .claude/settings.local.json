@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git checkout *)",
+      "Bash(npx create-next-app@latest *)",
+      "Bash(mkdir -p /tmp/nextjs-setup-backup/.claude)",
+      "Bash(cp -r /Users/dcardellino/github.com/cardellinotech/cardellinotech-new/.claude /tmp/nextjs-setup-backup/)",
+      "Read(//private/tmp/nextjs-setup-backup/**)",
+      "Bash(mv vision.json /tmp/)",
+      "Bash(mv docs *)",
+      "Bash(mv .claude /tmp/claude-backup)",
+      "Bash(mv /tmp/vision.json /Users/dcardellino/github.com/cardellinotech/cardellinotech-new/)",
+      "Bash(mv /tmp/docs-backup /Users/dcardellino/github.com/cardellinotech/cardellinotech-new/docs)",
+      "Bash(mv /tmp/claude-backup /Users/dcardellino/github.com/cardellinotech/cardellinotech-new/.claude)",
+      "Bash(git *)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(npm show *)",
+      "Bash(npx eslint *)",
+      "Bash(npx shadcn@latest *)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\('version','?'\\)\\)\")",
+      "Bash(npm ls *)",
+      "Bash(xxd /Users/dcardellino/github.com/cardellinotech/cardellinotech-new/app/globals.css)",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\('exports',{}\\), indent=2\\)\\)\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); exports=d.get\\('exports',{}\\); tc=exports.get\\('./tailwind.css',{}\\); print\\(json.dumps\\(tc, indent=2\\)\\)\")",
+      "Bash(python3 *)",
+      "Bash(npx vercel *)"
+    ]
+  }
+}
