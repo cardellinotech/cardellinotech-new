@@ -6,7 +6,7 @@ export default function Services() {
       id="services"
       className="scroll-mt-[72px] py-[96px] px-4"
     >
-      <div className="mx-auto max-w-7xl">
+      <div className="mx-auto max-w-[1200px]">
         <h2 className="font-display text-[44px] font-bold leading-[1.1] tracking-[-0.02em] text-[var(--color-on-background)] mb-4">
           What I Build
         </h2>
