@@ -86,7 +86,7 @@
   Files: `components/sections/Hero.tsx`
   Notes: Full-viewport section. Centered text layout, max-width ~700px. Headline (h1): choose from the options in `docs/product-vision.md` § 4 Messaging Framework or create a variation — must communicate senior DevOps/SRE for startups in one line. Subheadline: one sentence on the USP (end-to-end ownership, no agency overhead). USP paragraph: 1–2 sentences expanding on the value prop. CTA button: "Get in Touch" — onclick smoothly scrolls to `#contact`. Use design tokens from `docs/design.md` for all styling. Verify: hero fills viewport on desktop and mobile, CTA button scrolls to contact section.
 
-- [ ] **TASK-010** — Build Services section
+- [x] **TASK-010** — Build Services section
   Files: `components/sections/Services.tsx`
   Notes: Uses `services` array from `lib/data/services.ts`. Section heading: "What I Do" or "Services". 2×2 grid on desktop (≥ 768px), 1-column on mobile. Each card: service title (bold), description text (2–3 sentences), tools list rendered as small tags/badges, outcome statement in lighter text. Use `Card` from shadcn/ui as the base. Add `id="services"` to the section element for anchor navigation. Each card should have consistent height — use `flex flex-col` and push the outcome statement to the bottom with `mt-auto`. Verify: 2×2 layout on desktop, 1-column on mobile, all 4 services render from data file.
 
