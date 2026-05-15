@@ -20,9 +20,34 @@ const bricolage = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://cardellino.tech"),
   title: "Dominic Cardellino — Senior DevOps & SRE Freelancer",
   description:
     "Senior DevOps & SRE engineer for tech startups. End-to-end infrastructure ownership — CI/CD, Kubernetes, platform engineering. No agencies, no junior handoffs.",
+  openGraph: {
+    title: "Dominic Cardellino — Senior DevOps & SRE Freelancer",
+    description:
+      "Senior DevOps & SRE engineer for tech startups. End-to-end infrastructure ownership — CI/CD, Kubernetes, platform engineering. No agencies, no junior handoffs.",
+    url: "https://cardellino.tech",
+    siteName: "cardellino.tech",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Dominic Cardellino — Senior DevOps & SRE Freelancer",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dominic Cardellino — Senior DevOps & SRE Freelancer",
+    description:
+      "Senior DevOps & SRE engineer for tech startups. End-to-end infrastructure ownership — CI/CD, Kubernetes, platform engineering.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
