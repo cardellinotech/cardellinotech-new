@@ -94,7 +94,7 @@
   Files: `components/sections/HowIWork.tsx`
   Notes: Uses `engagementModels` array from `lib/data/engagementModels.ts`. Section heading: "How I Work". 3-column grid on desktop, 1-column on mobile. Each column: engagement model name (bold), 2–3 sentence description, "Best for:" line in italic or lighter text. Apply a slightly different background color than the adjacent sections (use a design token value) to create visual separation. Add `id="how-i-work"`. No pricing text anywhere in this section. Verify: 3-column layout on desktop, 1-column on mobile, no layout breaks.
 
-- [ ] **TASK-012** — Assemble landing page from section components
+- [x] **TASK-012** — Assemble landing page from section components
   Files: `app/page.tsx`
   Notes: Import Navigation, Hero, Services, HowIWork. Render in order. Wrap non-navigation sections in `<main>`. Navigation renders above `<main>`. Verify: full above-the-fold page renders correctly, navigation works, sections have correct anchor IDs.
 
