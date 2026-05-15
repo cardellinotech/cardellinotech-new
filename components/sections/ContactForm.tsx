@@ -189,7 +189,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={formState === "submitting"}
-            className="w-full bg-[var(--color-accent)] text-[var(--color-on-accent)] hover:bg-[#D97706] disabled:bg-[var(--color-border)] disabled:text-[var(--color-on-surface-muted)] rounded-[var(--rounded-lg)] px-6 py-3.5 font-semibold text-[16px] transition-colors cursor-pointer disabled:cursor-not-allowed"
+            className="w-full bg-[var(--color-cta)] text-white hover:bg-[var(--color-cta-hover)] disabled:bg-[var(--color-border)] disabled:text-[var(--color-on-surface-muted)] rounded-[var(--rounded-lg)] px-6 py-3.5 font-semibold text-[16px] transition-colors cursor-pointer disabled:cursor-not-allowed"
           >
             {formState === "submitting" ? "Sending..." : "Send Message"}
           </button>
