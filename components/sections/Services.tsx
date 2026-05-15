@@ -1,47 +1,74 @@
 import { services } from "@/lib/data/services";
 
+const NUM = ["01", "02", "03", "04"];
+
 export default function Services() {
   return (
-    <section
-      id="services"
-      className="scroll-mt-[72px] py-[96px] px-4"
-    >
-      <div className="mx-auto max-w-[1200px]">
-        <h2 className="font-display text-[44px] font-bold leading-[1.1] tracking-[-0.02em] text-[var(--color-on-background)] mb-4">
-          What I Build
-        </h2>
-        <p className="text-[var(--color-on-surface-muted)] text-[18px] mb-12">
-          Four disciplines. One point of contact.
-        </p>
+    <section id="services" className="scroll-mt-[72px] py-24 px-6">
+      <div className="mx-auto max-w-7xl">
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {services.map((service) => (
-            <div
-              key={service.id}
-              className="bg-[var(--color-surface)] rounded-[var(--rounded-md)] p-8 border border-[var(--color-border)] flex flex-col gap-4 min-h-[280px]"
-            >
-              <h3 className="font-display text-[22px] font-semibold leading-[1.3] text-[var(--color-on-background)]">
+        {/* Section header */}
+        <div className="mb-14">
+          <div className="section-eyebrow">
+            <div className="w-8 h-px" style={{ background: 'var(--color-accent)' }} />
+            <span className="font-mono text-[11px] tracking-widest uppercase" style={{ color: 'var(--color-accent)' }}>
+              Services
+            </span>
+          </div>
+          <h2 className="font-display text-[44px] md:text-[52px] font-bold leading-[1.05] tracking-[-0.025em] text-[var(--color-on-background)]">
+            What I Build
+          </h2>
+          <p className="text-[17px] mt-3 text-[var(--color-on-surface-muted)]">
+            Four disciplines. One point of contact.
+          </p>
+        </div>
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {services.map((service, i) => (
+            <div key={service.id} className="service-card">
+
+              {/* Background display number */}
+              <span
+                className="absolute top-1 right-3 font-display font-bold leading-none tracking-[-0.04em] select-none pointer-events-none"
+                style={{ fontSize: '110px', color: 'rgba(255,255,255,0.024)' }}
+              >
+                {NUM[i]}
+              </span>
+
+              {/* Ordinal label */}
+              <span className="font-mono text-[11px] tracking-widest" style={{ color: 'var(--color-on-surface-muted)' }}>
+                {NUM[i]}
+              </span>
+
+              {/* Title */}
+              <h3 className="font-display text-[20px] font-semibold leading-[1.25] text-[var(--color-on-background)]">
                 {service.title}
               </h3>
 
-              <p className="font-sans text-[16px] leading-[1.6] text-[var(--color-on-background)]">
+              {/* Description */}
+              <p className="text-[15px] leading-[1.75] text-[var(--color-on-surface-muted)]">
                 {service.description}
               </p>
 
-              <div className="flex flex-wrap gap-2">
+              {/* Tool badges */}
+              <div className="flex flex-wrap gap-1.5">
                 {service.tools.map((tool) => (
-                  <span
-                    key={tool}
-                    className="bg-[var(--color-surface-raised)] text-[var(--color-on-surface-muted)] text-[14px] rounded-full px-[10px] py-[4px]"
-                  >
-                    {tool}
-                  </span>
+                  <span key={tool} className="tool-badge">{tool}</span>
                 ))}
               </div>
 
-              <p className="font-sans text-[14px] text-[var(--color-on-surface-muted)] mt-auto">
-                {service.outcome}
-              </p>
+              {/* Outcome */}
+              <div
+                className="flex items-start gap-2 mt-auto pt-4"
+                style={{ borderTop: '1px solid var(--color-border)' }}
+              >
+                <span className="font-mono text-[13px] shrink-0" style={{ color: 'var(--color-accent)' }}>→</span>
+                <p className="text-[13px] leading-[1.65] text-[var(--color-on-surface-muted)]">
+                  {service.outcome}
+                </p>
+              </div>
+
             </div>
           ))}
         </div>

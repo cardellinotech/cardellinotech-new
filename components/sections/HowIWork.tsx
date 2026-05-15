@@ -1,37 +1,79 @@
-import { engagementModels } from "@/lib/data/engagementModels"
+import { engagementModels } from "@/lib/data/engagementModels";
 
 export default function HowIWork() {
   return (
     <section
       id="how-i-work"
-      className="scroll-mt-[72px] py-[96px] px-4 bg-[var(--color-surface)]"
+      className="scroll-mt-[72px] py-24 px-6"
+      style={{ background: 'var(--color-surface)' }}
     >
-      <div className="mx-auto max-w-[1200px]">
-        <h2 className="font-display text-[44px] font-bold leading-[1.1] tracking-[-0.02em] text-[var(--color-on-background)] mb-12">
-          How I Work
-        </h2>
+      <div className="mx-auto max-w-7xl">
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Section header */}
+        <div className="mb-14">
+          <div className="section-eyebrow">
+            <div className="w-8 h-px" style={{ background: 'var(--color-accent)' }} />
+            <span className="font-mono text-[11px] tracking-widest uppercase" style={{ color: 'var(--color-accent)' }}>
+              Engagement
+            </span>
+          </div>
+          <h2 className="font-display text-[44px] md:text-[52px] font-bold leading-[1.05] tracking-[-0.025em] text-[var(--color-on-background)]">
+            How I Work
+          </h2>
+        </div>
+
+        {/* Models — divided grid */}
+        <div
+          className="grid grid-cols-1 md:grid-cols-3 gap-px"
+          style={{ background: 'var(--color-border)' }}
+        >
           {engagementModels.map((model) => (
-            <div key={model.id} className="flex flex-col gap-4">
-              <h3 className="font-display text-[22px] font-semibold leading-[1.3] text-[var(--color-on-background)]">
+            <div
+              key={model.id}
+              className="flex flex-col gap-5 p-8"
+              style={{ background: 'var(--color-surface)' }}
+            >
+              {/* Title */}
+              <h3 className="font-display text-[24px] font-bold text-[var(--color-on-background)]">
                 {model.title}
               </h3>
 
-              <p className="font-sans text-[16px] leading-[1.6] text-[var(--color-on-background)]">
+              {/* Description */}
+              <p className="text-[15px] leading-[1.8] flex-1" style={{ color: 'var(--color-on-surface-muted)' }}>
                 {model.description}
               </p>
 
-              <p className="font-sans text-[16px] leading-[1.6] text-[var(--color-on-surface-muted)]">
-                <span className="text-[var(--color-accent)] font-semibold">
-                  Best for:{" "}
-                </span>
-                {model.ideal}
-              </p>
+              {/* Data rows */}
+              <div
+                className="flex flex-col gap-2 pt-4"
+                style={{ borderTop: '1px solid var(--color-border)' }}
+              >
+                <div className="flex items-center justify-between">
+                  <span className="font-mono text-[11px] uppercase tracking-wider" style={{ color: 'var(--color-on-surface-muted)' }}>
+                    Duration
+                  </span>
+                  <span className="font-mono text-[12px] text-[var(--color-on-background)]">{model.duration}</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="font-mono text-[11px] uppercase tracking-wider" style={{ color: 'var(--color-on-surface-muted)' }}>
+                    Commitment
+                  </span>
+                  <span className="font-mono text-[12px] text-[var(--color-on-background)]">{model.commitment}</span>
+                </div>
+              </div>
+
+              {/* Best for */}
+              <div className="flex items-start gap-2">
+                <span className="font-mono text-[13px] shrink-0" style={{ color: 'var(--color-accent)' }}>→</span>
+                <p className="text-[13px] leading-[1.65]" style={{ color: 'var(--color-on-surface-muted)' }}>
+                  {model.ideal}
+                </p>
+              </div>
             </div>
           ))}
         </div>
+
       </div>
     </section>
-  )
+  );
 }
