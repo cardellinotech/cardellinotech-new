@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CardellinoTech — bilingual one-pager
 
-## Getting Started
+A landing page built with Next.js App Router, React, TypeScript and plain CSS. It has no analytics, external font requests, database or email API.
 
-First, run the development server:
+## Run
 
-```bash
+Use Node.js 22.18 or later (Node.js 24 is used for verification).
+
+```sh
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+German: `/de`, English: `/en`. `/` redirects to `/de`. Both language pages are statically generated; invalid language routes return 404.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm run test
+npm run lint
+npm run build
+npm run typecheck
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Inquiries
 
-## Learn More
+General inquiry links lead to the contact section. Package links prepare a localized email to `hello@cardellino.tech`, with the selected package in the subject and message. Visitors send the message from their own email app. The site does not send, store or confirm delivery of messages. The address remains visible for copying.
 
-To learn more about Next.js, take a look at the following resources:
+## Legal pages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`/de/imprint`, `/en/imprint`, `/de/privacy` and `/en/privacy` use public business details in `lib/business.mjs`. Hosting is handled in a separate PR. The privacy notice is visibly a draft until actual hosting, log retention and any international data transfers have been reviewed. Set `hostingPrivacyReviewed` only after updating and reviewing the final notice. Legal pages currently use `noindex`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[Contact and legal handover](docs/contact-and-legal.md) lists outstanding confirmations. [Launch checklist](docs/launch-checklist.md) covers deployment work. [Positioning research](docs/positioning-research.md) documents the content decisions.

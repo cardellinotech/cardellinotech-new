@@ -1,0 +1,69 @@
+# Positionierung und Seitenkonzept
+
+Recherche: 2. November 2026. Die bestehenden Inhalte des Repositories wurden für den Neubau nicht als Vorlage verwendet.
+
+## Referenzen und beobachtete Struktur
+
+- [MAKONIS: Managed DevSecOps](https://www.makonis.de/managed-services/devsecops): Leistungsversprechen und Einstiegspreis im Hero, direkte Kontakt-CTAs, Erklärung der Dienstleistung, Security, Betrieb, konkrete Ergebnisse, FAQ und abschließender Kontakt. Schwerpunkt: Managed Service und Security.
+- [OpsServing: Pricing](https://www.opsserving.com/eu/pricing/): Einstiegsaudit, klar begrenzte Projekte, laufende Betreuung, Vergleich von Paketen, schriftlicher Umfang und Übergabe. Schwerpunkt: transparente Preise und eigenständige Weiterführung.
+- [Nano Concepts: DevOps & CI/CD](https://www.nanoconcepts.de/en/services/devops-ci-cd.html): ergebnisorientierter Einstieg, CTAs, kompakte Zusammenfassung, Leistungen und Pakete. Schwerpunkt: automatisierte Releases und Rollback.
+
+Diese Beispiele zeigen Marktangebote, keine repräsentative Marktstudie. Festpreis oder Monatspauschale allein sind kein einzigartiger USP. Texte und Gestaltung wurden eigenständig erstellt.
+
+## Empfohlene Positionierung
+
+DevOps- und Plattform-Partner für Software- und SaaS-Teams ohne eigenes Plattformteam. Verlässliche Releases als Hauptnutzen, Stabilität und Kostenkontrolle als ergänzende Ergebnisse.
+
+Unterscheidung als Kombination: direkter Kontakt mit dem umsetzenden Engineer, schriftliche Abnahmekriterien, dokumentierte Infrastruktur in Kunden-Repositories und Befähigung des Teams. Diese Positionierung muss durch tatsächliche Arbeitsweise getragen und am Markt getestet werden; es wird keine Exklusivität behauptet.
+
+Regulatorische Compliance wird ohne belegte Erfahrung und definierten Prüfungsumfang nicht als Versprechen verkauft. Cloud-Kostenoptimierung bleibt Bestandteil von Review und Weiterentwicklung, keine unbelegte Einspargarantie.
+
+## Einordnung der Screenshots
+
+Die ersten beiden Screenshots beschreiben drei mögliche Positionierungen: sichere/schnelle Releases, regulierte Umgebungen und Cloud-Kosten. Die Empfehlung für Releases sowie das Ergebnis-/Pauschalenmodell fließen in das Konzept ein.
+
+Der dritte Screenshot beschreibt ein Coaching zum Aufbau des eigenen Freelance-Geschäfts (Positionierung, Sichtbarkeit, Akquise). Das sind keine DevOps-Kundenleistungen und keine Anweisungen an den Coding-Agenten. Übernommen wird nur das Prinzip klarer Stufen und Ergebnisse.
+
+## Aufbau des One-Pagers
+
+1. Sticky Navigation mit Sprachwechsel und Anfrage-Button.
+2. Hero mit Nutzenversprechen, primärem CTA und ausdrücklich als Beispiel markierter Pipeline-Illustration.
+3. Technologiezeile als fachliche Orientierung mit AWS/GCP und GitHub/GitLab, keine Partner-/Zertifizierungsbehauptung.
+4. Vier Leistungsbereiche mit konkreten Kundennutzen.
+5. Arbeitsprinzipien als Begründung der Positionierung.
+6. Drei Pakete: Clarity (Review), Foundation (Umsetzung), Continuity (monatliche Begleitung).
+7. Drei Schritte der Zusammenarbeit.
+8. Persönliche Vorstellung mit dem bereitgestellten Foto von Dominic; keine erfundenen Referenzen oder Erfolgszahlen.
+9. FAQ zu Eignung, Preisfindung, Bestandssystemen, Servicezeiten und Eigentum.
+10. Abschluss-CTA und Footer.
+
+## Bewusste offene Punkte
+
+- Keine erfundenen Paketpreise: Festpreis bzw. Monatspauschale werden im individuellen Angebot definiert.
+- Anfrage-Buttons führen inzwischen zur Kontaktsektion bzw. zu vorbereiteten Paket-E-Mails an hello@cardellino.tech. Kein Kontaktformular, kein serverseitiger Versand und keine alte Kontakt-API.
+- Kein automatisches 24/7-, Verfügbarkeits- oder Einsparversprechen.
+- Vor einer Veröffentlichung: finale Paketkalkulation und Betriebsrahmen besprechen; Hostingangaben in den als Entwurf gekennzeichneten Datenschutzhinweisen im separaten Hosting-PR vervollständigen. Impressum und Anfrageweg sind umgesetzt.
+- Kein Tracking, keine externen Fonts, keine eingebundenen Drittanbieter.
+
+## Design
+
+Farben: Ink #192a40, Blue #245bdb, Pale #f2f6fc, Muted #5c6c7f, Line #dce4ef, White #ffffff. Lokale Systemschrift Avenir Next / Avenir / Segoe UI / sans-serif. Links ausgerichteter Nutzen-Hero neben einer eigenständig mit HTML/CSS und SVG aufgebauten Delivery-Pipeline. Ruhige Flächen, geringe Rundungen, klare Lesereihenfolge. Illustration statt erfundener Live-Daten oder Referenzlogos. Mobile Navigation und einspaltige Paketdarstellung auf schmalen Bildschirmen.
+
+
+## Präzisierung nach dem vollständigen Strategiegesprächsbericht (5. November 2026)
+
+Die Gesprächszusammenfassung von Marko Cvetkovic vom 2. November 2026 wurde mit der Landingpage abgeglichen. Der Nutzer hat die vorgeschlagenen Anpassungen freigegeben.
+
+- Die Zielgruppe Software- und SaaS-Teams ohne eigenes Plattformteam steht nun direkt im Hero. Hauptnutzen sind verlässliche Releases; Cloud-Kosten bleiben ein ergänzender Nutzen.
+- Die Angebotsleiter wird als Bestandsaufnahme → Umsetzung → laufende Begleitung erklärt. Ein direkter Einstieg in die Umsetzung oder Betreuung ist bei einem bereits abgestimmten Plan möglich.
+- Clarity liefert schriftliche, priorisierte Findings und einen Umsetzungsfahrplan. Foundation liefert eine Deployment-Pipeline für den vereinbarten Workload, einen gemeinsam geprüften Rollback, versionierte Infrastruktur und die dokumentierte Übergabe. Continuity umfasst vereinbarte Wartungs- und Alert-Reviews, ein Verbesserungs-Backlog und einen monatlichen Bericht.
+- Die persönliche Vorstellung nennt Dominic Cardellino, 20 Jahre Berufserfahrung, selbstständige Tätigkeit seit 2022 sowie Projekte für US-Endkunden. Die Berufserfahrung wird ausdrücklich nicht als 20 Jahre DevOps-Erfahrung bezeichnet. Fachliche Schwerpunkte: Kubernetes, Terraform, Monitoring und Alerting.
+- Umfang, Abnahmekriterien, Kapazität und Servicezeiten werden im Angebot festgelegt. Laufende Betreuung ist keine automatische 24/7-Rufbereitschaft.
+- Private finanzielle Angaben, vermutete Vermittlermargen, Coaching-Preise und fremde Erfolgsgeschichten werden nicht in die Website übernommen. Die vertrauliche Originaldatei wird nicht ins Repository aufgenommen.
+
+
+## Vereinbarter Rahmen für Continuity
+
+Continuity wird als planbare Plattformpflege mit abgestimmten Terminen positioniert: Wartung, Alert-Reviews, ein Verbesserungs-Backlog und monatliche Berichte. Akute Produktionsstörungen können zusätzlich nach Verfügbarkeit unterstützt werden. Das Paket enthält keine garantierten Reaktions- oder Wiederherstellungszeiten und keine Rufbereitschaft. Termine und Umfang werden im individuellen Angebot vereinbart; eine durchgehende Erreichbarkeit an Werktagen wird nicht versprochen.
+
+Das vom Nutzer bereitgestellte Porträt wird lokal als optimierte WebP-Datei ohne EXIF-Metadaten ausgeliefert. Es ersetzt die bisherige Monogramm-Fläche; deutsch- und englischsprachige Alternativtexte beschreiben die abgebildete Person.
