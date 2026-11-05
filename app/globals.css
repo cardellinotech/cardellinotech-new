@@ -1381,3 +1381,51 @@ h2 {
   .hero h1 { font-size:clamp(43px,14.8vw,58px); }
   .hero-heading-detail { font-size:25px; letter-spacing:-.6px; }
 }
+
+.contact-section {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:90px;
+  align-items:start;
+  padding-block:20px 90px;
+}
+.contact-section>div>p:not(.eyebrow) {
+  max-width:470px;
+  color:var(--muted);
+  font-size:14px;
+  margin-top:22px;
+}
+.contact-card {
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:var(--pale);
+  padding:30px;
+}
+.contact-card>svg { color:var(--blue); margin-bottom:15px; }
+.contact-card h3 { margin-bottom:7px; }
+.contact-address { display:block; width:fit-content; color:var(--blue); font-size:20px; overflow-wrap:anywhere; }
+.contact-card .button { margin-top:25px; }
+.contact-card p { font-size:12px; line-height:1.8; color:var(--muted); margin:17px 0 12px; }
+.contact-privacy { font-size:12px; text-decoration:underline; text-underline-offset:3px; }
+.footer-legal { display:flex; gap:20px; flex-wrap:wrap; }
+.footer-legal a:hover { color:var(--blue); }
+.legal-page { max-width:850px; padding-block:55px 85px; }
+.legal-page h1 { font-size:44px; line-height:1.2; letter-spacing:-1.5px; margin:30px 0; }
+.legal-page section { margin-block:35px; }
+.legal-page h2 { font-size:23px; letter-spacing:-.5px; margin-bottom:13px; }
+.legal-page p,.legal-page address { font-size:14px; line-height:1.85; }
+.legal-page address { font-style:normal; }
+.legal-page p a,.legal-page address a { color:var(--blue); text-decoration:underline; text-underline-offset:3px; overflow-wrap:anywhere; }
+.legal-draft { background:var(--pale); border:1px solid var(--line); border-radius:8px; padding:18px 22px; font-size:13px; }
+@media (max-width:850px) { .contact-section { gap:35px; } }
+@media (max-width:600px) {
+  .contact-section { grid-template-columns:1fr; gap:25px; padding-block:10px 55px; }
+  .contact-card { padding:24px; }
+  .contact-section>div>p:not(.eyebrow) { font-size:13px; }
+  .contact-address { font-size:19px; }
+  .legal-page { padding-block:35px 55px; }
+  .legal-page h1 { font-size:34px; letter-spacing:-1px; }
+  .legal-page h2 { font-size:21px; }
+  .legal-page p,.legal-page address { font-size:13px; }
+  .footer-legal { width:100%; }
+}

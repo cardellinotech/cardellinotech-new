@@ -40,9 +40,9 @@ Der dritte Screenshot beschreibt ein Coaching zum Aufbau des eigenen Freelance-G
 ## Bewusste offene Punkte
 
 - Keine erfundenen Paketpreise: Festpreis bzw. Monatspauschale werden im individuellen Angebot definiert.
-- Anfrage-Buttons sind gemäß Auftrag ohne Link oder Aktion, mit aria-disabled und erklärendem Titel. Kein Kontaktformular, kein Versand und keine alte Kontakt-API.
+- Anfrage-Buttons führen inzwischen zur Kontaktsektion bzw. zu vorbereiteten Paket-E-Mails an hello@cardellino.tech. Kein Kontaktformular, kein serverseitiger Versand und keine alte Kontakt-API.
 - Kein automatisches 24/7-, Verfügbarkeits- oder Einsparversprechen.
-- Vor einer Veröffentlichung: finale Paketkalkulation, persönliche Angaben, Impressum und Datenschutzhinweise ergänzen; die Anfragefunktion ist ein separater nächster Schritt.
+- Vor einer Veröffentlichung: finale Paketkalkulation und Betriebsrahmen besprechen; Hostingangaben in den als Entwurf gekennzeichneten Datenschutzhinweisen im separaten Hosting-PR vervollständigen. Impressum und Anfrageweg sind umgesetzt.
 - Kein Tracking, keine externen Fonts, keine eingebundenen Drittanbieter.
 
 ## Design
