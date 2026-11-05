@@ -48,3 +48,15 @@ Der dritte Screenshot beschreibt ein Coaching zum Aufbau des eigenen Freelance-G
 ## Design
 
 Farben: Ink #192a40, Blue #245bdb, Pale #f2f6fc, Muted #5c6c7f, Line #dce4ef, White #ffffff. Lokale Systemschrift Avenir Next / Avenir / Segoe UI / sans-serif. Links ausgerichteter Nutzen-Hero neben einer eigenständig mit HTML/CSS und SVG aufgebauten Delivery-Pipeline. Ruhige Flächen, geringe Rundungen, klare Lesereihenfolge. Illustration statt erfundener Live-Daten oder Referenzlogos. Mobile Navigation und einspaltige Paketdarstellung auf schmalen Bildschirmen.
+
+
+## Präzisierung nach dem vollständigen Strategiegesprächsbericht (5. November 2026)
+
+Die Gesprächszusammenfassung von Marko Cvetkovic vom 2. November 2026 wurde mit der Landingpage abgeglichen. Der Nutzer hat die vorgeschlagenen Anpassungen freigegeben.
+
+- Die Zielgruppe Software- und SaaS-Teams ohne eigenes Plattformteam steht nun direkt im Hero. Hauptnutzen sind verlässliche Releases; Cloud-Kosten bleiben ein ergänzender Nutzen.
+- Die Angebotsleiter wird als Bestandsaufnahme → Umsetzung → laufende Begleitung erklärt. Ein direkter Einstieg in die Umsetzung oder Betreuung ist bei einem bereits abgestimmten Plan möglich.
+- Clarity liefert schriftliche, priorisierte Findings und einen Umsetzungsfahrplan. Foundation liefert eine Deployment-Pipeline für den vereinbarten Workload, einen gemeinsam geprüften Rollback, versionierte Infrastruktur und die dokumentierte Übergabe. Continuity umfasst vereinbarte Wartungs- und Alert-Reviews, ein Verbesserungs-Backlog und einen monatlichen Bericht.
+- Die persönliche Vorstellung nennt Dominic Cardellino, 20 Jahre Berufserfahrung, selbstständige Tätigkeit seit 2022 sowie Projekte für US-Endkunden. Die Berufserfahrung wird ausdrücklich nicht als 20 Jahre DevOps-Erfahrung bezeichnet. Fachliche Schwerpunkte: Kubernetes, Terraform, Monitoring und Alerting.
+- Umfang, Abnahmekriterien, Kapazität und Servicezeiten werden im Angebot festgelegt. Laufende Betreuung ist keine automatische 24/7-Rufbereitschaft.
+- Private finanzielle Angaben, vermutete Vermittlermargen, Coaching-Preise und fremde Erfolgsgeschichten werden nicht in die Website übernommen. Die vertrauliche Originaldatei wird nicht ins Repository aufgenommen.
