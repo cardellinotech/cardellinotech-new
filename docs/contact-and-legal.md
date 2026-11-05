@@ -25,3 +25,25 @@ Im Hosting-PR sind Anbieter/Empfänger, Anfragedaten und Logs, tatsächliche Spe
 - [§ 5 DDG](https://www.gesetze-im-internet.de/ddg/__5.html)
 - [DSGVO](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679), insbesondere Art. 6, 13 und die Betroffenenrechte
 - [Landesbeauftragter für Datenschutz und Informationsfreiheit Baden-Württemberg](https://www.baden-wuerttemberg.datenschutz.de/)
+
+## Geplanter Hostingweg nach DKF-Vorbild
+
+Der Nutzer möchte den technischen Hostingansatz aus `dcardellino/dkf` übernehmen. Die gelesenen Dateien `docs/deployment-hetzner.md`, `deploy/compose.yaml`, `deploy/nginx/dkf-bikes.conf` und `.github/workflows/deploy.yml` beschreiben einen Hetzner-VPS mit Docker, Nginx auf dem Host und certbot/Let's Encrypt. GitHub Actions baut Containerimages und veröffentlicht sie über GHCR; der Server wird per SSH aktualisiert. Das ist die gewünschte Architektur, kein Nachweis der tatsächlich laufenden CardellinoTech-Konfiguration.
+
+Für CardellinoTech reichen der App-Container und der Proxy. Die DKF-Datenbank, der Formularschutz und die zugehörigen Aufbewahrungsregeln sind kein Bestandteil dieser Website und werden nicht übernommen.
+
+Vor dem Entfernen des Datenschutz-Entwurfshinweises fehlen konkret:
+
+1. Tatsächlicher Hetzner-Produktstandort und verantwortliches Kundenkonto. Der Standort ist im Konto zu prüfen; die DKF-Texte allein belegen ihn nicht für CardellinoTech.
+2. Bestätigung eines auf die Verarbeitung passenden AV-Vertrags mit Hetzner. Nicht behaupten, dass dieser bereits abgeschlossen ist.
+3. Tatsächliches Nginx-Logformat und die Datenfelder, getrennt für Zugriffs- und Fehlerprotokolle. In der DKF-Referenz sind beide Logs aktiv; die Löschfristen und ein mögliches geerbtes Format fehlen dort.
+4. Technisch umgesetzte Aufbewahrung und Löschung für Nginx-Logs, Containerlogs und gegebenenfalls Sicherungen. Drei Docker-Logdateien zu je 10 MB sind eine Größenbegrenzung, keine feste Speicherdauer. Die 24-Stunden-Regel des DKF-IP-Hashes betrifft nicht Nginx-Logs.
+5. Tatsächliche weitere Empfänger oder Dienste auf dem Anfrageweg, zum Beispiel ein zusätzlich vorgeschalteter CDN-/Proxy-Dienst oder externe Fehlerüberwachung. GitHub Actions und GHCR sind zunächst Build-/Verteilungswerkzeuge; Besucheranfragen werden dadurch nicht automatisch an GitHub weitergeleitet.
+6. Löschpraxis für erledigte E-Mail-Anfragen bei united-domains einschließlich Archivierung und Sicherungen. Die DKF-Frist für Datenbankanfragen ist hier nicht übertragbar.
+
+Die Datenschutzerklärung im DKF-Repository ist selbst ausdrücklich als Platzhalter gekennzeichnet. Sie ist keine fertige Vorlage für CardellinoTech. Beim Hosting-PR werden die bestätigten Datenflüsse und Fristen in beide Sprachfassungen eingearbeitet. `hostingPrivacyReviewed` bleibt bis dahin `false`.
+
+Quellen zur Vertrags- und Informationsprüfung:
+
+- [Datenschutz bei Hetzner](https://docs.hetzner.com/de/general/company-and-policy/data-protection-at-hetzner/)
+- [Informationen zu Datenschutzerklärungen der IHK Rhein-Neckar](https://www.ihk.de/rhein-neckar/recht/datenschutz-itrecht-internetrecht/datenschutz/datenschutzerklaerung-4502986)

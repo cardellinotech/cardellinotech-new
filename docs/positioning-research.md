@@ -33,7 +33,7 @@ Der dritte Screenshot beschreibt ein Coaching zum Aufbau des eigenen Freelance-G
 5. Arbeitsprinzipien als Begründung der Positionierung.
 6. Drei Pakete: Clarity (Review), Foundation (Umsetzung), Continuity (monatliche Begleitung).
 7. Drei Schritte der Zusammenarbeit.
-8. Persönliche Vorstellung ohne erfundene Referenzen oder Erfolgszahlen.
+8. Persönliche Vorstellung mit dem bereitgestellten Foto von Dominic; keine erfundenen Referenzen oder Erfolgszahlen.
 9. FAQ zu Eignung, Preisfindung, Bestandssystemen, Servicezeiten und Eigentum.
 10. Abschluss-CTA und Footer.
 
@@ -65,3 +65,5 @@ Die Gesprächszusammenfassung von Marko Cvetkovic vom 2. November 2026 wurde mit
 ## Vereinbarter Rahmen für Continuity
 
 Continuity wird als planbare Plattformpflege mit abgestimmten Terminen positioniert: Wartung, Alert-Reviews, ein Verbesserungs-Backlog und monatliche Berichte. Akute Produktionsstörungen können zusätzlich nach Verfügbarkeit unterstützt werden. Das Paket enthält keine garantierten Reaktions- oder Wiederherstellungszeiten und keine Rufbereitschaft. Termine und Umfang werden im individuellen Angebot vereinbart; eine durchgehende Erreichbarkeit an Werktagen wird nicht versprochen.
+
+Das vom Nutzer bereitgestellte Porträt wird lokal als optimierte WebP-Datei ohne EXIF-Metadaten ausgeliefert. Es ersetzt die bisherige Monogramm-Fläche; deutsch- und englischsprachige Alternativtexte beschreiben die abgebildete Person.

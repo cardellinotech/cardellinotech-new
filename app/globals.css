@@ -690,51 +690,17 @@ h3 {
   gap:90px;
   align-items:center}
 .about-visual {
-  min-height:355px;
-  background:#eaf0fb;
+  width:100%;
+  max-width:400px;
+  aspect-ratio:4 / 5;
+  justify-self:center;
+  background:var(--pale);
   border-radius:var(--radius);
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
   position:relative;
   overflow:hidden}
-.about-visual:before,.about-visual:after {
-  content:'';
-  position:absolute;
-  width:360px;
-  height:360px;
-  border:1px solid #d3dff4;
-  border-radius:50%}
-.about-visual:after {
-  width:255px;
-  height:255px}
-.monogram {
-  font-size:148px;
-  font-weight:600;
-  line-height:1;
-  color:var(--blue);
-  letter-spacing:-28px;
-  transform:rotate(-8deg);
-  padding-right:26px;
-  z-index:1}
-.monogram span {
-  font-weight:500}
-.monogram i {
-  font-style:normal;
-  color:var(--ink)}
-.about-visual-bottom {
-  position:absolute;
-  bottom:20px;
-  left:25px;
-  right:25px;
-  display:flex;
-  justify-content:space-between;
-  gap:20px;
-  font-size:9px;
-  color:#536b90}
-.about-visual-bottom>span:first-child {
-  font-weight:600}
+.about-portrait {
+  object-fit:cover;
+  object-position:center 38%}
 .about-copy>p:not(.eyebrow) {
   font-size:14px;
   line-height:1.9;
@@ -1069,11 +1035,6 @@ h2 {
   gap:30px}
 .about-grid {
   gap:40px}
-.about-visual {
-  min-height:340px}
-.about-visual-bottom {
-  flex-direction:column;
-  gap:0}
 .faq-grid {
   gap:40px}
 .final-cta {
@@ -1313,11 +1274,6 @@ h2 {
 .about-grid {
   grid-template-columns:1fr;
   gap:32px}
-.about-visual {
-  min-height:285px}
-.about-visual-bottom {
-  flex-direction:row;
-  font-size:9px}
 .about-copy>p:not(.eyebrow) {
   font-size:13px}
 .faq-section {

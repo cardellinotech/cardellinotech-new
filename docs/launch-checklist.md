@@ -42,15 +42,17 @@ Ergebnis der Aktualisierung: Next.js 16.4.5, React 19.3.1 und ein bereinigter Pa
 
 Die Geschäftsdaten und der Mailanbieter wurden vom Nutzer bestätigt; die Seiten sind technisch umgesetzt. Der Datenschutz-Entwurf bleibt bis zur Prüfung des tatsächlichen Hostings offen. Details: `docs/contact-and-legal.md`.
 
-## 3. Hosting und Domain
+## 3. Hosting und Domain — separater PR
 
-- [ ] 🤝 **Vercel-Pro-Projekt vorbereiten — ca. 30–45 Minuten.** Empfohlener einfacher Veröffentlichungsweg für dieses Next.js-Projekt. Vorhandenes Vercel-Konto und bestehende Domainkonfiguration zuerst prüfen. Unter Dashboard → Add New → Project das GitHub-Repository importieren, Framework Next.js und Produktionsbranch main kontrollieren. Achtung: Bei bereits aktivierter automatischer Veröffentlichung kann ein Merge nach main die bestehende Website sofort ersetzen; deshalb zuerst die Vorschau abnehmen. Der Hobby-Tarif ist auf persönliche, nichtkommerzielle Nutzung beschränkt. Pro wird aktuell ab 20 USD/Monat angeboten; zusätzliche Nutzung, weitere kostenpflichtige Sitze und Steuern prüfen. Budgetwarnungen und eine passende Ausgabenbegrenzung einrichten. Noch keinen neuen kostenpflichtigen Tarif abschließen, wenn ein bestehender Account das Projekt bereits abdeckt.
+Der Nutzer hat den Hostingweg aus dem DKF-Projekt gewählt: Hetzner-VPS mit Docker, Nginx auf dem Host und certbot/Let's Encrypt. Die erfolgreichen Vercel-PR-Vorschauen sind keine Entscheidung für den Produktionsanbieter. Die Umsetzung und Veröffentlichung bleiben ausdrücklich einem separaten Hosting-PR vorbehalten.
 
-  **Erfolg erkennbar:** Die Vorschau baut erfolgreich, die kommerzielle Nutzung ist vom Tarif gedeckt und Produktionsbranch sowie automatische Veröffentlichungen sind bekannt.
+- [ ] 🤝 **Hetzner-Betrieb und Deployment vorbereiten — ca. 1–2 Stunden.** Im Hetzner-Konto den vorgesehenen Server und dessen Standort prüfen und einen zur Verarbeitung passenden AV-Vertrag kontrollieren bzw. abschließen. GitHub Actions soll ein Containerimage über GHCR bereitstellen; GHCR ist die GitHub-Ablage für Containerimages. Die App läuft hinter dem vorhandenen Nginx und ist nur lokal auf dem Server erreichbar. Serverzugriff, Containername, Port und Dateipfade müssen von bestehenden Anwendungen getrennt sein. Für diese Website ist keine Datenbank nötig. Kosten ergeben sich aus dem tatsächlichen Serververtrag; es wird kein zusätzlicher Server ohne Entscheidung bestellt.
 
-- [ ] 🤝 **Domain verbinden — ca. 30 Minuten plus DNS-Wartezeit.** Unter Project → Settings → Domains die freigegebene Domain hinzufügen. DNS ist das Adressbuch, das die Domain zum Hosting leitet. Beim Domainanbieter genau die von Vercel angezeigten Einträge setzen. Bestehende E-Mail-Einträge erhalten. Eine Hauptadresse auswählen, beispielsweise mit oder ohne www, und die andere darauf weiterleiten. HTTPS ist die verschlüsselte Verbindung; das Zertifikat muss für alle verwendeten Hostnamen gültig sein. Domainkosten hängen von vorhandener Domain und Verlängerungstarif ab und sind noch nicht ermittelt.
+  **Erfolg erkennbar:** Das geprüfte Image startet isoliert, bestehende Websites bleiben funktionsfähig und ein Rückweg auf das vorherige Image ist dokumentiert. Die Datenflüsse und Log-Löschfristen aus `docs/contact-and-legal.md` sind festgelegt und technisch umgesetzt.
 
-  **Erfolg erkennbar:** Die Hauptdomain ist verschlüsselt erreichbar, die alternative Adresse leitet korrekt weiter und der E-Mail-Empfang funktioniert weiterhin. DNS-Änderungen können bis zur weltweiten Sichtbarkeit etwa einen Tag oder länger benötigen.
+- [ ] 🤝 **Domain, HTTPS und Veröffentlichung verbinden — ca. 30–60 Minuten plus DNS-Wartezeit.** Beim Domainanbieter die vorhandenen A-/AAAA-Einträge prüfen und gezielt auf den vorgesehenen Server leiten. DNS ist das Adressbuch, das die Domain zum Server führt. Bestehende E-Mail-Einträge erhalten. Nginx erhält einen eigenen Server-Block für die Hauptdomain und eine Weiterleitung für die alternative Adresse mit bzw. ohne www. HTTPS ist die verschlüsselte Verbindung; die Zertifikate werden über certbot/Let's Encrypt verwaltet. Im GitHub-Repository die Deploy-Zugänge direkt in den geschützten Einstellungen hinterlegen, niemals im Quellcode oder Chat. Vor dem Merge prüfen, ob die noch bestehende Vercel-Verbindung automatisch Produktion veröffentlichen würde; eine Umstellung wird separat freigegeben.
+
+  **Erfolg erkennbar:** Die Hauptdomain ist verschlüsselt erreichbar, Weiterleitungen und E-Mail-Empfang funktionieren und die Datenschutzhinweise stimmen mit dem tatsächlichen Betrieb überein. DNS-Änderungen können bis zur weltweiten Sichtbarkeit etwa einen Tag oder länger benötigen.
 
 ## 4. Auffindbarkeit und finale Abnahme
 
@@ -76,11 +78,11 @@ Ein echtes Foto, ein freigegebenes anonymisiertes Projektbeispiel, strukturierte
 
 ## Kosten und offene Entscheidungen
 
-Für den beschriebenen Weg: Vercel Pro ab 20 USD/Monat, gegebenenfalls zusätzliche Nutzung, Sitze und Steuern; Domain und Geschäftspostfach je nach bestehenden Verträgen. Kein neues Datenbank-, Zahlungs-, Kalender- oder E-Mail-API-Abonnement für den beschriebenen E-Mail-Start erforderlich. Offen sind Domain und vorhandenes Hosting-Konto. Unternehmenssitz und Geschäftsadresse in Herrenberg sowie hello@cardellino.tech bei united-domains sind bestätigt. Deshalb ist eine vollständige monatliche Gesamtsumme noch nicht belastbar.
+Für den beschriebenen Weg gelten die Kosten des gewählten bzw. vorhandenen Hetzner-Servers sowie Domain und Geschäftspostfach nach bestehenden Verträgen. Die genaue Serverwahl und damit zusätzliche monatliche Kosten sind noch nicht bestätigt. Kein neues Datenbank-, Zahlungs-, Kalender- oder E-Mail-API-Abonnement ist für den E-Mail-Anfrageweg erforderlich. Die Geschäftsadresse in Herrenberg und hello@cardellino.tech bei united-domains sind bestätigt.
 
 ## Quellen
 
-- [Vercel-Preise](https://vercel.com/pricing) und [Hobby-Nutzungsrahmen](https://vercel.com/docs/plans/hobby), geprüft am 5. November 2026.
+- [Hetzner: Datenschutz und Auftragsverarbeitung](https://docs.hetzner.com/de/general/company-and-policy/data-protection-at-hetzner/); Hostingreferenz des Nutzers: DKF-Repository.
 - [§ 5 DDG bei deutschem Unternehmenssitz](https://www.gesetze-im-internet.de/ddg/__5.html).
 - [DSGVO, insbesondere Informationspflichten nach Artikel 13](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32016R0679).
 - Paketprüfung: `npm audit --omit=dev --json` am 5. November 2026. Die genaue Ausnutzbarkeit hängt von verwendeten Funktionen und Hosting ab; die Meldungen wurden in diesem Audit noch nicht einzeln reproduziert.
