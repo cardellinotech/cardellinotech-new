@@ -43,13 +43,14 @@ export default async function Page({params}:{params:Promise<{lang:string}>}) {
    result: 'An accepted pipeline with a tested rollback and operating documentation.'
   },
   {
-   name: 'Continuity', type: 'Ongoing partnership',
-   desc: 'For teams that want to maintain and improve their running platform.',
-   price: 'Monthly retainer', time: 'Capacity and service hours defined in your proposal',
+   name: 'Continuity', type: 'Scheduled platform care',
+   desc: 'For teams that want to maintain and improve their platform at agreed times.',
+   price: 'Monthly retainer', time: 'Scope and scheduled sessions agreed upfront',
    items: [
-    'Maintenance and alert reviews during agreed service hours',
+    'Scheduled maintenance and alert reviews',
     'An agreed backlog of platform improvements',
-    'Monthly report on changes, reliability and cloud costs'
+    'Monthly report on changes, reliability and cloud costs',
+    'Additional incident support, subject to availability'
    ],
    result: 'Documented improvements and clear priorities for the next month.'
   }
@@ -77,13 +78,14 @@ export default async function Page({params}:{params:Promise<{lang:string}>}) {
    result: 'Eine abgenommene Pipeline mit geprüftem Rollback und Betriebsdokumentation.'
   },
   {
-   name: 'Continuity', type: 'Laufende Begleitung',
-   desc: 'Wenn ihr eure laufende Plattform pflegen und weiterentwickeln wollt.',
-   price: 'Mit Monatspauschale', time: 'Kapazität und Servicezeiten im Angebot definiert',
+   name: 'Continuity', type: 'Planbare Plattformpflege',
+   desc: 'Wenn ihr eure Plattform zu abgestimmten Terminen pflegen und weiterentwickeln wollt.',
+   price: 'Mit Monatspauschale', time: 'Umfang und Termine vorab abgestimmt',
    items: [
-    'Wartung und Alert-Reviews zu vereinbarten Servicezeiten',
+    'Geplante Wartung und Alert-Reviews',
     'Abgestimmtes Backlog für Plattform-Verbesserungen',
-    'Monatlicher Bericht zu Änderungen, Stabilität und Cloud-Kosten'
+    'Monatlicher Bericht zu Änderungen, Stabilität und Cloud-Kosten',
+    'Zusätzliche Störungshilfe nach Verfügbarkeit'
    ],
    result: 'Dokumentierte Verbesserungen und klare Prioritäten für den nächsten Monat.'
   }
@@ -92,13 +94,13 @@ export default async function Page({params}:{params:Promise<{lang:string}>}) {
  ['Who is this for?','Software and SaaS teams that want reliable delivery without building a full platform team. We define the right scope based on your product, current setup and priorities.'],
  ['How much do the packages cost?','Clarity and Foundation are fixed-price projects. Continuity is a monthly retainer. You receive a written proposal with deliverables, acceptance criteria and price before committing.'],
  ['Do we need to rebuild everything?','No. We start with your existing setup and address the most valuable improvements first. A new tool or migration only makes sense if it solves a concrete problem.'],
- ['Is 24/7 support included?','No. Availability, service hours, response expectations and any incident support are agreed separately. A monthly retainer does not imply round-the-clock on-call coverage.'],
+ ['How does Continuity handle urgent incidents?','Continuity covers scheduled maintenance, alert reviews and improvements at agreed times. I can additionally help with urgent production incidents, subject to availability. The package includes no guaranteed response or recovery time and no on-call coverage.'],
  ['Who owns the infrastructure and documentation?','You do. Code and documentation live in your repositories. The handover is part of the work, so your team can keep developing the platform independently.']
  ]:[
  ['Für wen ist die Zusammenarbeit geeignet?','Für Software- und SaaS-Teams, die zuverlässig ausliefern wollen, ohne ein komplettes Plattformteam aufzubauen. Den passenden Umfang bestimmen wir anhand eures Produkts, Setups und eurer Prioritäten.'],
  ['Was kosten die Pakete?','Clarity und Foundation sind Projekte zum Festpreis. Continuity ist eine monatliche Pauschale. Vor der Beauftragung erhaltet ihr ein schriftliches Angebot mit Leistungen, Abnahmekriterien und Preis.'],
  ['Müssen wir alles neu aufbauen?','Nein. Wir starten mit eurem bestehenden Setup und den Verbesserungen, die euch am meisten bringen. Ein neues Tool oder eine Migration ist dann sinnvoll, wenn damit ein konkretes Problem gelöst wird.'],
- ['Ist ein 24/7-Support enthalten?','Nein. Verfügbarkeit, Servicezeiten, Reaktionswege und eine mögliche Incident-Unterstützung werden separat vereinbart. Eine Monatspauschale beinhaltet keine automatische Rund-um-die-Uhr-Rufbereitschaft.'],
+ ['Wie funktioniert Continuity bei akuten Störungen?','Continuity umfasst geplante Wartung, Alert-Reviews und Verbesserungen zu abgestimmten Terminen. Bei akuten Produktionsstörungen unterstütze ich zusätzlich nach Verfügbarkeit. Eine feste Reaktions- oder Wiederherstellungszeit und eine Rufbereitschaft sind nicht Bestandteil dieses Pakets.'],
  ['Wem gehören Infrastruktur und Dokumentation?','Euch. Code und Dokumentation liegen in euren Repositories. Die Übergabe gehört zur Umsetzung, damit euer Team die Plattform eigenständig weiterentwickeln kann.']];
  return <><a href="#main" className="skip-link">{en?'Skip to content':'Zum Inhalt'}</a><Header en={en}/><main id="main"><section className="hero"><div className="container hero-grid"><div className="hero-copy"><div className="hero-tag"><span className="status-dot"/>{en?'DevOps for software & SaaS teams':'DevOps für Software- & SaaS-Teams'}</div><h1>{en?<>Ship<br/>reliably.<span className="hero-heading-detail">Without your own platform team.</span></>:<>Zuverlässig<br/>releasen.<span className="hero-heading-detail">Auch ohne eigenes Plattformteam.</span></>}</h1><p className="hero-description">{en?'I help your team automate deployments, build reliable cloud infrastructure and maintain the platform. So you can focus on your product.':'Ich unterstütze euer Team mit automatisierten Deployments, stabiler Cloud-Infrastruktur und laufender Betreuung. Damit ihr euch auf euer Produkt konzentrieren könnt.'}</p><div className="hero-actions"><Inquiry en={en}/><a href="#packages" className="text-link">{en?'Explore packages':'Pakete entdecken'}<ArrowDown size={16}/></a></div><p className="hero-note">{en?'DevOps · SRE · Platform Engineering · Cloud':'DevOps · SRE · Platform Engineering · Cloud'}</p></div><Pipeline en={en}/></div><div className="container hero-foot"><span>{en?'Work directly with your engineer.':'Direkt mit dem umsetzenden Engineer arbeiten.'}</span><span><Check size={14}/>{en?'Clear scope':'Klarer Umfang'}</span><span><Check size={14}/>{en?'Direct collaboration':'Direkter Kontakt'}</span><span><Check size={14}/>{en?'Your infrastructure':'Eure Infrastruktur'}</span></div></section>
  <section className="stack-strip"><div className="container stack-inner"><span>{en?'The right tools. For your setup.':'Die richtigen Tools. Für euer Setup.'}</span><div><strong><Cloud size={22}/>AWS &amp; GCP</strong><strong><BoxIcon/>Kubernetes</strong><strong><Code2 size={22}/>Terraform</strong><strong><GitPullRequest size={22}/>GitHub &amp; GitLab</strong><strong><Activity size={22}/>Grafana</strong></div></div></section>

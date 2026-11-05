@@ -60,3 +60,8 @@ Die Gesprächszusammenfassung von Marko Cvetkovic vom 2. November 2026 wurde mit
 - Die persönliche Vorstellung nennt Dominic Cardellino, 20 Jahre Berufserfahrung, selbstständige Tätigkeit seit 2022 sowie Projekte für US-Endkunden. Die Berufserfahrung wird ausdrücklich nicht als 20 Jahre DevOps-Erfahrung bezeichnet. Fachliche Schwerpunkte: Kubernetes, Terraform, Monitoring und Alerting.
 - Umfang, Abnahmekriterien, Kapazität und Servicezeiten werden im Angebot festgelegt. Laufende Betreuung ist keine automatische 24/7-Rufbereitschaft.
 - Private finanzielle Angaben, vermutete Vermittlermargen, Coaching-Preise und fremde Erfolgsgeschichten werden nicht in die Website übernommen. Die vertrauliche Originaldatei wird nicht ins Repository aufgenommen.
+
+
+## Vereinbarter Rahmen für Continuity
+
+Continuity wird als planbare Plattformpflege mit abgestimmten Terminen positioniert: Wartung, Alert-Reviews, ein Verbesserungs-Backlog und monatliche Berichte. Akute Produktionsstörungen können zusätzlich nach Verfügbarkeit unterstützt werden. Das Paket enthält keine garantierten Reaktions- oder Wiederherstellungszeiten und keine Rufbereitschaft. Termine und Umfang werden im individuellen Angebot vereinbart; eine durchgehende Erreichbarkeit an Werktagen wird nicht versprochen.
